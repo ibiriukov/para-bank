@@ -1,8 +1,10 @@
 import time
 
+import pytest
+
 from utils.common_methods import assert_is_true
 
-
+@pytest.mark.register_new_user
 def test_register_login(page, account_overview_page):
     print("\ntest_register_login::")
     assert assert_is_true(account_overview_page.get_text_of_h1(), "Accounts Overview")
@@ -23,6 +25,7 @@ def test_balances_for_initial_account(page, account_overview_page):
                                                                     "Available Amount")
     assert assert_is_true(account_overview_page.get_total_amount(), "Total$1000.00")
 
+@pytest.mark.open_new_account
 def test_open_new_account(page, account_overview_page):
     print("\ntest_open_new_account::")
 
@@ -50,6 +53,7 @@ def test_open_new_account(page, account_overview_page):
     assert account_overview_page.verify_amount_value_based_col_name(account_number_savings, "$0.00","Available Amount")
     assert assert_is_true(account_overview_page.get_total_amount(), "Total$1000.00")
 
+@pytest.mark.transfer_funds
 def test_transfer_funds(page, account_overview_page):
     print("\ntest_transfer_funds::")
 

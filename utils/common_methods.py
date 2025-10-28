@@ -22,6 +22,7 @@ def assert_is_true(actual_value, expected_value):
     else:
         print(f"❌ Actual value: {actual_value}  <- EXP: {expected_value}")
         return False
+
 def log_location():
     frame = inspect.currentframe().f_back
     file = os.path.basename(frame.f_code.co_filename)
