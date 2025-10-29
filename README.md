@@ -1,7 +1,7 @@
 # ParaBank Test Automation Framework
 
 >  **Overview**  
-A modular test automation suite for the ParaBank demo banking app, built with Python, Pytest, and Playwright. Showcases clean architecture, CI/CD integration, and practical QA engineering techniques for real-world applications.
+Compact PyTest suite for the ParaBank demo site. Focuses on transactional workflows (onboarding, transfers, balances) with POM design.
 
 >  **Highlights**
 - Transactional flows: onboarding, transfers, balances
