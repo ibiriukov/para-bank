@@ -1,22 +1,22 @@
 # ParaBank Test Automation Framework
 
 > ⚡ **Quick Summary for Recruiters**  
-Modular test automation suite for the ParaBank demo banking app using Python, Pytest, and Playwright. Demonstrates clean architecture, CI/CD readiness, and real-world QA engineering practices.
+A modular test automation suite for the ParaBank demo banking app, built with Python, Pytest, and Playwright. Showcases clean architecture, CI/CD integration, and practical QA engineering techniques for real-world applications.
 
 <details>
   <summary>📄 Full Technical Overview</summary>
 
 ## Tech Stack
 
-- Pytest for test orchestration and marker-based execution  
-- Playwright for browser automation (headless/headed)  
-- Page Object Model (POM) for maintainability  
-- Custom assertions for readable and traceable validations  
-- Environment variable handling via `.env` and `config.py`  
+- **Pytest** — orchestrates tests and supports marker-based execution  
+- **Playwright** — handles browser automation (headless and headed modes)  
+- **Page Object Model (POM)** — improves code maintainability and reuse  
+- **Custom assertions** — ensures readable, traceable validations  
+- **Environment config** — managed via `.env` and `config.py`  
 
 ## Test Coverage
 
-- **User registration and login** — validates successful onboarding and dashboard access  
+- **User registration and login** — validates onboarding and dashboard access  
 - **Account overview** — checks account count, balances, and available funds  
 - **Open new account** — creates a savings account and verifies UI updates  
 - **Transfer funds** — moves money between accounts and confirms updated balances  
@@ -24,13 +24,13 @@ Modular test automation suite for the ParaBank demo banking app using Python, Py
 
 ## CI/CD Integration
 
-- Jenkins jobs triggered by GitHub commits  
-- Parameterized test runs with environment control  
-- Build history and job status visible in Jenkins dashboard (`Jenkins.jpg`)  
+- Jenkins jobs triggered automatically on GitHub commits  
+- Supports parameterized test runs with environment control  
+- Build history and job status visible in the Jenkins dashboard (`Jenkins.jpg`)  
 
 ## Reporting
 
-- Pytest generates HTML reports for each test run  
+- HTML reports generated via Pytest for each test run  
 - Sample report and screenshots included (`report.html`, `report.jpg`)  
 - Screenshot capture on failure can be added for deeper traceability  
 
@@ -53,15 +53,15 @@ Modular test automation suite for the ParaBank demo banking app using Python, Py
 - `utils/` — Helpers and shared methods  
 - `.env` — Environment variables  
 - `.gitignore` — Git exclusions  
-- `config.py` — Runtime config loader  
-- `pytest.ini` — Pytest config  
+- `config.py` — Runtime configuration loader  
+- `pytest.ini` — Pytest settings  
 - `requirements.txt` — Python dependencies  
 - `report.html` — Sample test report  
 - `report.jpg` — Screenshot from test run  
 - `README.md` — Project overview  
 
-##  Author
+## 👤 Author
 
-**Ievgen** — QA-focused engineer with deep experience in Playwright, Pytest, and CI/CD pipelines. Passionate about clean architecture, traceable validations, and scalable test automation.
+**Ievgen** — QA engineer with deep expertise in Playwright, Pytest, and CI/CD pipelines. Focused on building scalable, maintainable automation with clean architecture and traceable validations.
 
 </details>
